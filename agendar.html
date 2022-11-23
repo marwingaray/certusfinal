@@ -24,28 +24,83 @@
   <title>Document</title>
   <!-- https://www.bootstrapcdn.com/  -->
   <!-- ./ significa salir al directorial prinipal o al padre -->
+  <style>
+            #autocompletar {
+              font-size: .6rem;
+            }
+      
+            .bg-es-imagen {
+              background-image: url('https://www.serpinblast.com/images/fondo.jpg');
+              overflow: hidden;
+              background-repeat: no-repeat;
+              background-size: cover;
+              position: relative;
+            }
+      
+            .bg-es-imagen::after {
+              content: '';
+              background-color: rgba(3, 3, 3, 0.3);
+              position: absolute;
+              inset: 0;
+            }
+      
+            address * {
+              color: white;
+              font-weight: bold;
+            }
+      
+            li {
+              list-style-type: none;
+              padding: 0 !important;
+            }
+      
+            small::before {
+              content: '*';
+              margin-left: .5rem;
+              margin-right: .3rem;
+            }
+      
+            textarea {
+              max-width: 100%;
+              max-height: 20vh;
+              resize: none;
+      
+            }
+      
+            picture {
+              min-width: 100%;
+            }
+      
+            picture img {
+              min-width: 100%;
+            }
+          </style>
+
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg bg-light">
     <section class="container-fluid">
-      <a class="navbar-brand" href="/">SERBINPLAST</a>
+      <a class="navbar-brand" href="./">SERBINPLAST</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <section class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/nosotros.html">NOSOTROS</a>
+            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/servicios.html">SERVICIOS</a>
+            <a class="nav-link" href="servicios.html">SERVICIOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/proyetos.html">PROYECTOS</a>
+            <a class="nav-link" href="proyetos.html">PROYECTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contacto.html">CONTACTO</a>
+            <a class="nav-link" href="contacto.html">CONTACTO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="agendar.html">AGENDAR CITA</a>
           </li>
         </ul>
       </section>
@@ -55,7 +110,7 @@
 
 
 
-  <main class="container">
+  <main class="container mb-5 mt-5">
     <section class="row">
       <section class="col-12 col-md-6 bg-light border datos-persona">
         <h2 class="pt-3 ps-3">Agendar visita</h2>
@@ -115,108 +170,82 @@
       </section>
   </main>
 
-  <section class="mt-3 container border p-0">
-    
-    <!-- <section class="d-flex flex-column align-items-center"> -->                   
-        <picture><img class="img-fluid" src="https://www.bbva.com/wp-content/uploads/2018/02/calle-sauceda-ciudad-bbva-mymaps-768x378.jpg" alt="" srcset=""></picture>
-              <p>Dirección</p>
-        </section>
-
-        <style>
-            #autocompletar {
-              font-size: .6rem;
-            }
-      
-            .bg-es-imagen {
-              background-image: url('https://www.serpinblast.com/images/fondo.jpg');
-              overflow: hidden;
-              background-repeat: no-repeat;
-              background-size: cover;
-              position: relative;
-            }
-      
-            .bg-es-imagen::after {
-              content: '';
-              background-color: rgba(3, 3, 3, 0.3);
-              position: absolute;
-              inset: 0;
-            }
-      
-            address * {
-              color: white;
-              font-weight: bold;
-            }
-      
-            li {
-              list-style-type: none;
-              padding: 0 !important;
-            }
-      
-            small::before {
-              content: '*';
-              margin-left: .5rem;
-              margin-right: .3rem;
-            }
-      
-            textarea {
-              max-width: 100%;
-              max-height: 20vh;
-              resize: none;
-      
-            }
-      
-            picture {
-              min-width: 100%;
-            }
-      
-            picture img {
-              min-width: 100%;
-            }
-          </style>
-
-    <!--Grid column-->
-      
-              <!--Grid column-->
-              <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-0">Contacto</h5>
-      
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="#!" class="nav-link">Cel: 984602019</a>
-                  </li>
-                  <li>
-                    <a href="#!" class="nav-link">
-                        Dirección: Calle Nueva Nº 209.
-                        Interior 211. Galería los Portales.
-                        Cercado -  Arequipa
+  
+    <footer class="bg-dark text-white text-center text-md-start">
+      <!-- Grid container -->
+      <section class="container p-4 ">
+        <!--Grid row-->
+        <section class="row">
+          <!--Grid column-->
+          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">SerpinBlast</h5>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+              aliquam voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Inicio</h5>
+  
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/proyectos.html">PROYECTOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contacto.html">CONTACTO</a>
+                </li>
+              </ul>
+          </section>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0">Contacto</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="nav-link">Cel: 984602019</a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">
+                    Dirección: Calle Nueva Nº 209.
+                    Interior 211. Galería los Portales.
+                    Cercado -  Arequipa
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="nav-link">
+                    Email:
+                    contacto@serpinblast.com
                     </a>
-                  </li>
-                  <li>
-                    <a href="#!" class="nav-link">
-                        Email:
-                        contacto@serpinblast.com
-                        </a>
-                    </li>
-                </ul>
-              </section>
-              <!--Grid column-->
-            </section>
-            <!--Grid row-->
+                </li>
+            </ul>
           </section>
-          <!-- Grid container -->
-      
-          <!-- Copyright -->
-          <section class="text-center p-3" style="background-color: rgba(10, 4, 4, 0.2);">
-            © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-          </section>
-          <!-- Copyright -->
-        </footer>
-        <!-- Footer -->
+          <!--Grid column-->
+        </section>
+        <!--Grid row-->
       </section>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <section class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </section>
+      <!-- Copyright -->
+    </footer>
+        <!-- Footer -->
+      
 </body>
 </html>
-
-
-
-     
