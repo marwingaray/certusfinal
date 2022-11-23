@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>Cotizar</title>
+    <style>
+        .gbImage {
+            width: 100%;
+            height: 200px;
+            background-size: auto;
+        }
+
+        .subtitle {
+            color: orange;
+        }
+
+        .imgEquipos {
+            max-width: 100px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <nav class="navbar navbar-expand-lg bg-light border border-3">
+        <section class="container-fluid">
+          <a class="navbar-brand" href="/">SERBINPLAST</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <section class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/proyectos.html">PROYECTOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto.html">CONTACTO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/cotizar.html">COTIZAR</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </nav>
+    <main class="p-4 mb-5">
+        <section class="d-flex justify-center ml5">
+            <h1>Realiza tu cotizacion</h1>
+        </section>
+        <section class="row row-cols-1 row-cols-sm-2">
+
+            <article class="p-4">
+
+                <section class=" ">
+                    <label class="form-label" for="">Nombres</label>
+                    <input type="text" class="form-control" id="nombres">
+                </section>
+                <section class=" ">
+                    <label class="form-label" for="">Correo electronico</label>
+                    <input type="email" class="form-control" id="email">
+                </section>
+                <section class=" ">
+                    <label class="form-label" for="">Telefono / Celular</label>
+                    <input type="text" class="form-control" id="celular">
+                </section>
+                <section class=" ">
+                    <label class="form-label" for="">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="proyecto">
+                </section>
+
+            </article>
+            <article class="p-4">
+                <section class=" ">
+                    <label class="form-label" for="">Seleccione servicio</label>
+                    <select name="" class="form-control" id="servicio">
+                        <option value="20">Pintura poliuretano</option>
+                        <option value="30">Pintura zinc</option>
+                    </select>
+                </section>
+                <section class="mt-2">
+                    <p>Adicionales</p>
+                </section>
+                <section class=" ">
+                    <input class="form-check-input" type="checkbox" id="informe1" name="darkmode" value="1000">
+                    <label class="form-check-label" for="informe1">Reporte de espesores</label>
+                </section>
+                <section class=" ">
+                    <input class="form-check-input" type="checkbox" id="informe2" name="darkmode" value="1000">
+                    <label class="form-check-label" for="informe2">Informe de datos ambientales</label>
+                </section>
+                <section class=" ">
+                    <input class="form-check-input" type="checkbox" id="informe3" name="darkmode" value="1000">
+                    <label class="form-check-label" for="informe3">Informe fotografico</label>
+                </section>
+                <section class="mt-2 ">
+                    <label class="form-label" for="">Cantidad m2</label>
+                    <input type="number" class="form-control" id="cantidad">
+                </section>
+
+            </article>
+        </section>
+        <section class="mb-2">
+            <input class="form-check-input" type="checkbox" id="terminos" name="darkmode" value="informe">
+            <label class="form-check-label" for="terminos">Aceptar teminos y condiciones</label>
+        </section>
+        <section class="row row-cols-3 mt-5">
+            <section class="text-center">
+                <button class="btn btn-warning " id="btnCotizar">Cotizar</button>
+            </section>
+            <section class="text-center">
+                <button class="btn btn-warning">Enviar cotizacion a correo</button>
+            </section>
+            <section class="text-center">
+                <button class="btn btn-warning">Solicitar servicio</button>
+            </section>
+        </section>
+
+    </main>
+    <section class="">
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center text-md-start">
+          <!-- Grid container -->
+          <section class="container p-4">
+            <!--Grid row-->
+            <section class="row">
+              <!--Grid column-->
+              <section class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">SerpinBlast</h5>
+      
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                  molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                  aliquam voluptatem veniam, est atque cumque eum delectus sint!
+                </p>
+              </section>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Inicio</h5>
+      
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/proyectos.html">PROYECTOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/contacto.html">CONTACTO</a>
+                    </li>
+                  </ul>
+              </section>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <section class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0">Contacto</h5>
+      
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#!" class="nav-link">Cel: 984602019</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="nav-link">
+                        Dirección: Calle Nueva Nº 209.
+                        Interior 211. Galería los Portales.
+                        Cercado -  Arequipa
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#!" class="nav-link">
+                        Email:
+                        contacto@serpinblast.com
+                        </a>
+                    </li>
+                </ul>
+              </section>
+              <!--Grid column-->
+            </section>
+            <!--Grid row-->
+          </section>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <section class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          </section>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+</body>
+
+</html>
+<script>
+    const btnCotizar = document.getElementById("btnCotizar");
+    btnCotizar.addEventListener('click', function () {
+        if (document.getElementById("terminos").checked) {
+            let servicio = document.getElementById("servicio").value;
+            let cantidad = document.getElementById("cantidad").value || 0;
+
+            let subtotal = parseFloat(cantidad) * parseFloat(servicio);
+
+            let informe1 = document.getElementById("informe1");
+            if (informe1.checked) {
+                subtotal += parseFloat(informe1.value)  ;
+            }
+
+
+            let informe2 = document.getElementById("informe2");
+            if (informe2.checked) {
+                subtotal += parseFloat(informe2.value);
+            }
+            let informe3 = document.getElementById("informe3").value;
+            if (informe3.checked) {
+                subtotal += parseFloat(informe3.value);
+            }
+            alert(`El costo total promedio de su cotizaion es de ${subtotal} por cantidad de ${cantidad} m2`)
+        } else {
+            alert("debe aceptar los terminos y condiciones");
+        }
+    });
+
+
+</script>
+<!-- Código de instalación Cliengo para 127.0.0.1:5501 -->
+<script
+    type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/637d1a2f0d1d9d002af3aadf/637d1a310d1d9d002af3aae2.js?platform=view_installation_code'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
