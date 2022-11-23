@@ -1,93 +1,99 @@
 /* para carrusel de imágenes */
 .carousel-inner1 {
-    max-width: 500px;
-    height: auto;
-    margin: auto;
+  max-width: 500px;
+  height: auto;
+  margin: auto;
 }
 
 .carousel-inner2 {
-    max-width: 1000px;
-    height: auto;
-    margin: auto;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
 }
 
 .carousel-item .abc {
-    max-width: 300px;
-    height: auto;
-    margin: auto;
+  max-width: 300px;
+  height: auto;
+  margin: auto;
 }
 
 /* para cotizar.html y servicios.html */
 .gbImage {
-    width: 100%;
-    height: 200px;
-    background-size: auto;
+  width: 100%;
+  height: 200px;
+  background-size: auto;
 }
 
 .subtitle {
-    color: orange;
+  color: orange;
 }
 
 .imgEquipos {
-    max-width: 100px;
+  max-width: 100px;
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover
+  height: 100%;
+  width: 100%;
+  object-fit: cover
 }
 
 /* para nosotros.html */
 iframe {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 3/2;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
 }
 
 /* para contacto.html */
 .bg-es-imagen {
-    background-image: url('https://www.serpinblast.com/images/fondo.jpg');
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+  background-image: url('https://www.serpinblast.com/images/fondo.jpg');
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
-  .bg-es-imagen::after {
-    content: '';
-    background-color: hsla(229, 100%, 0%, 0.3);
-    position: absolute;
-    inset: 0;
-  }
+.bg-es-imagen::after {
+  content: '';
+  background-color: hsla(229, 100%, 0%, 0.3);
+  position: absolute;
+  inset: 0;
+}
 
-  address * {
-    color: white;
-    font-weight: bold;
-  }
+address * {
+  color: white;
+  font-weight: bold;
+}
 
-  li {
-    list-style-type: none;
-    padding: 0 !important;
-  }
+li {
+  list-style-type: none;
+  padding: 0 !important;
+}
 
-  small::before {
-    content: '*';
-    margin-left: .5rem;
-    margin-right: .3rem;
-  }
+small::before {
+  content: '*';
+  margin-left: .5rem;
+  margin-right: .3rem;
+}
 
-  textarea {
-    max-width: 100%;
-    max-height: 20vh;
-    resize: none;
+textarea {
+  max-width: 100%;
+  max-height: 20vh;
+  resize: none;
 
-  }
+}
 
-  picture {
-    min-width: 100%;
-  }
+picture {
+  min-width: 100%;
+}
 
-  picture img {
-    min-width: 100%;
-  }
+picture img {
+  min-width: 100%;
+}
+
+/**/
+.carousel-item {
+  max-height: 50vh;
+  overflow: hidden;
+}
