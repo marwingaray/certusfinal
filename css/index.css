@@ -4,8 +4,19 @@
     margin: auto;\\
 }
 
+.carousel-inner2{
+    max-width: 1000px;
+    height: auto;
+    margin: auto;\\
+}
+
 .carousel-item img {
     max-width: 300px;
     height: auto;
     margin: auto;\\
 }
+
+.carousel-item .abc{
+    max-width: 300px;
+    height: auto;
+    margin: auto;}
