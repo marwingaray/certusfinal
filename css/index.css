@@ -39,6 +39,11 @@ img {
   object-fit: cover
 }*/
 
+.def {
+  max-width: 100%;
+  height: auto;
+}
+
 /* para nosotros.html */
 iframe {
   max-width: 100%;
