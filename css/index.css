@@ -94,6 +94,6 @@ picture img {
 
 /**/
 .carousel-item {
-  max-height: 50vh;
+  max-height: 70vh;
   overflow: hidden;
 }
